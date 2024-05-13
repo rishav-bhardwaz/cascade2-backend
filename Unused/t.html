@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Image on Click</title>
+<link href="./output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-WKtnKypMbkz6+w1yOZ/YLG7/vQ//Kmae4/GI2k5Xa1Ul6WmN8dVpMnHElM7xI2RDlOG4TztG5jj99pOzOgQmXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toggle Images on Click</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<style>
+  .image-container {
+    display: none;
+  }
+
+  .image-container.active {
+    display: block;
+  }
+</style>
+</head>
+<body>
+<div class="flex gap-56 justify-evenly">
+    <!-- Images -->
+<div id="image-container-1" class="image-container active">
+    <img src="img/homePage.png" alt="First Image" style="width: 450x; height: 700px;">
+  </div>
+  <div id="image-container-2" class="image-container">
+    <img src="img/2.webp" alt="Second Image" style="width: 450x; height: 700px;">
+  </div>
+  <div id="image-container-3" class="image-container">
+    <img src="img/3.webp" alt="Third Image" style="width: 450x; height: 700px;">
+  </div>
+
+<div class="py-28">
+  <div class="text-white px-3 py-3 rounded-lg shadow-md bg-gray-900" onclick="toggleImage(1)">
+    <br><br>
+    <h3 class="font-semibold">Local Best Rated NGOs</h3>
+    <p class="text-xs">Join us in the pursuit of positive impact and let your action speak louder<br> than words. Start your journey today!</p>
+  </div>
+  <br><br>
+  <div class="text-white px-3 py-3 rounded-lg shadow-md bg-gray-900" onclick="toggleImage(2)">
+    <br><br>
+    <h3 class="font-semibold">Local Best Rated NGOs</h3>
+    <p class="text-xs">Join us in the pursuit of positive impact and let your action speak louder<br> than words. Start your journey today!</p>
+  </div>
+  <br><br>
+  <div class="text-white px-3 py-3 rounded-lg shadow-md bg-gray-900" onclick="toggleImage(3)">
+    <br><br>
+    <h3 class="font-semibold">Local Best Rated NGOs</h3>
+    <p class="text-xs">Join us in the pursuit of positive impact and let your action speak louder<br> than words. Start your journey today!</p>
+  </div>
+</div></div>
+
+
+
+<script>
+  function toggleImage(imageNumber) {
+    // Hide all image containers
+    document.querySelectorAll('.image-container').forEach(function(el) {
+      el.classList.remove('active');
+    });
+
+    // Show the clicked image container
+    document.getElementById('image-container-' + imageNumber).classList.add('active');
+  }
+</script>
+
+</body>
+</html>
+
+
+</body>
+</html>

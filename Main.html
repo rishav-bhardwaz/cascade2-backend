@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-WKtnKypMbkz6+w1yOZ/YLG7/vQ//Kmae4/GI2k5Xa1Ul6WmN8dVpMnHElM7xI2RDlOG4TztG5jj99pOzOgQmXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-gradient-to-tr from-zinc-50 to-purple-50">
+  <!-- Header -->
+  <div class="pl-20 py-8 flex">
+    <div class="logo pl-32 py-8">
+      <a href="/Main.html">
+      <embed src="img/Hmm.svg" type="image/svg+xml" class = "text-lg"></a>
+    </div>
+    <div>
+      <ul class="pl-20 pr-48 py-10 flex justify-between text-gray-700 font-semibold ">
+        <button class="px-5 hover:underline"><a href="/Main.html">Home</a></button>
+        <button class="px-5 hover:underline"><a href="/NGO.html">NGO</a></button>
+        <button id = "community" class="px-5 hover:underline">Community</button>
+        <button id = "contactUsBtn" class="px-5 hover:underline">Contact Us</button>
+      </ul>
+    </div>
+    <div class="flex items-center pl-80 pr-40">
+      <div class="">
+        <span id="user-email"></span>
+        <button class="px-4 py-2 inline-block rounded-lg bg-black text-white font-bold">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDAhNkthZ-yZKNoQW8pDzrY366uahei2i_z3JpQwXYPCvNFA/viewform?usp=sf_link">Join Us</a>
+        </button>
+        <button id="logoutBtn" class="px-4 py-2 inline-block justify-between rounded-2xl border-solid border- border-black">Logout</button>
+      </div>
+    </div>
+  </div>
+  <!-- End Header -->
+
+  <!-- Main Content -->
+  <div class="grid grid-cols-2 gap-5">
+    <div class="mt-36 font-sans">
+      <div class="ml-52">
+        <h1 class="font-bold text-5xl text-black">Empowering Change <br> Find Your Case</h1>
+        <br>
+        <p class="font-medium text-gray-600">Embark on a journey of meaningful change with our NGO finding website <br> Explore a diverse array of causes and organizations, tailored to match your <br> passion and skills.</p>
+        <br>
+        <button class="bg-blue-600 rounded-lg px-3 py-2 font-semibold text-white">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDAhNkthZ-yZKNoQW8pDzrY366uahei2i_z3JpQwXYPCvNFA/viewform?usp=sf_link">Get started</a>
+        </button>
+      </div>
+    </div>
+    <div class="grid grid-cols-3 gap-1 px-20 mr-24">
+      <div class="ml-8 mt-72 h-52 w-36 col-span-1">
+        <img class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" src="img/1.webp" alt="">
+      </div>
+      <div class="ml-8 py-44 col-span-1 grid grid-rows-3 gap-4">
+        <div class="h-52 w-36"><img class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" src="img/2.webp" alt=""></div>
+        <div class="h-52 w-36 py-5"><img class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" src="img/3.webp" alt=""></div>
+      </div>
+      <div class="ml-8 py-20 col-span-1 grid grid-rows-4 gap-7">
+        <div class="h-52 w-36"><img class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" src="img/4.webp" alt=""></div>
+        <div class="h-52 w-36"><img class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" src="img/5.webp" alt=""></div>
+      </div>
+    </div>
+  </div>
+  <!-- End Main Content -->
+
+  <!-- Features -->
+  <div class="bg-gray-950 -mt-64 w-full">
+    <div class="text-white py-32 ml-56 relative"> <!-- Added relative positioning -->
+      <h3 class="bold text-3xl font-semibold leading-normal">Explore Our Website Find NGOs Nearby</h3>
+      <p class="font-light text-gray-300">With just a click, uncover opportunities to make a tangible difference in the world.</p>
+      <br>
+      <div class="flex gap-32 justify-between px-24">
+        <div>
+         <img src="img/homePage.png" alt="" style="width: 450x; height: 700px;">
+        </div>
+        <div class="py-8">
+          <div class="text-white px-3 py-3 rounded-lg shadow-md ">
+            <br><br>
+            <i class="fa-solid fa-location-dot text-xl"></i>
+            <h3 class="font-semibold py-2">Local Best Rated NGOs</h3>
+            <p class="text-gray-400">Join us in the pursuit of positive impact and let your action speak louder<br> than words. Start your journey today!</p>
+          </div>
+          <br><br>
+          <div class="text-white px-3 py-3 rounded-lg shadow-md ">
+            <i class="fa-solid fa-user-plus text-xl"></i>
+            <h3 class="font-semibold py-2">Join the Movement</h3>
+            <p class="text-gray-400">Join a community of like-minded individuals dedicated to making a difference. <br> Connect with fellow volunteers, share your experiences, and inspire others <br> to take action.</p>
+          </div>
+          <br><br>
+          <div class="text-white px-3 py-3 rounded-lg shadow-md">
+            <i class="fa-solid fa-address-book text-xl"></i>
+            <h3 class="font-semibold py-2">Find Your Match</h3>
+            <p class="text-gray-400">Our advanced matching algorithm helps you find the NGO that aligns perfectly <br>  with your values and aspirations.</p>
+          </div>
+          <br><br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Features -->
+
+  <!-- Community Features -->
+  <div id = "communitySection" class = "mt-24">
+    <h2 class="font-semibold text-3xl text-center leading-normal">Explore Our Community Features</h2>
+    <p class="text-center text-gray-700 font-semibold">Unlock a world of opportunities with these powerful features and<br>
+        Elevate your college journey with our diverse range of offerings.</p>
+</div>
+
+<div class="px-48 flex gap-6 justify-evenly mt-10">
+    <div style="width: 33.33%; min-width: 250px;">
+        <div class="border border-spacing-7 shadow-lg rounded-lg">
+            <div class="px-4 py-10" style="height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                <i class="fa-solid fa-magnifying-glass-location text-xl"></i>
+                <h3 class="py-2 font-bold">Local NGO Search</h3>
+                <p style="flex-grow: 1; overflow: hidden;">Easily search for NGOs in your area to find<br> organizations making a difference right in your <br> community.</p><br>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 33.33%; min-width: 250px;">
+        <div class="border border-spacing-7 shadow-lg rounded-lg">
+            <div class="px-4 py-10" style="height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                <i class="fa-solid fa-database text-xl"></i>
+                <h3 class="py-2 font-bold">Comprehensive NGO Database</h3>
+                <p style="flex-grow: 1; overflow: hidden;">Access a comprehensive database of NGOs,<br>including their names, services offered, and <br> locations, to quickly identify those addressing <br> your needs.</p>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 33.33%; min-width: 250px;">
+        <div class="border border-spacing-7 shadow-lg rounded-lg">
+            <div class="px-4 py-10" style="height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                <i class="fa-solid fa-address-card text-xl"></i>
+                <h3 class="py-2 font-bold">Detailed NGO Profiles</h3>
+                <p style="flex-grow: 1; overflow: hidden;">View detailed profiles of each NGO, highlighting <br>the basic facilities they provide, giving you a <br> clear understanding of their mission and <br>services.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="py-2 px-48 flex gap-6 justify-evenly mt-10">
+    <div style="width: 33.33%; min-width: 250px;">
+        <div class="border border-spacing-7 shadow-lg rounded-lg">
+            <div class="px-4 py-10" style="height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                <i class="fa-solid fa-filter text-xl"></i>
+                <h3 class="py-2 font-bold">Filter and Sort Options</h3>
+                <p style="flex-grow: 1; overflow: hidden;">Filter and sort search results based on specific <br> criteria such as services offered, target <br> beneficiaries, or location, to find the perfect <br> match for your interests and preferences</p>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 33.33%; min-width: 250px;">
+        <div class="border border-spacing-7 shadow-lg rounded-lg">
+            <div class="px-4 py-10" style="height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                <i class="fa-solid fa-map-location-dot text-xl"></i>
+                <h3 class="py-2 font-bold">Interactive Map Integration</h3>
+                <p style="flex-grow: 1; overflow: hidden;">Visualize NGO locations on an interactive map <br> for easy navigation and planning your <br>involvement with nearby organizations.</p><br>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 33.33%; min-width: 250px;">
+        <div class="border border-spacing-7 shadow-lg rounded-lg">
+            <div class="px-4 py-10" style="height: 100%; display: flex; flex-direction: column; justify-content: space-between;">
+                <i class="fa-solid fa-share-from-square text-xl"></i>
+                <h3 class="py-2 font-bold">Save and Share Favorites</h3>
+                <p style="flex-grow: 1; overflow: hidden;">Save your favorite NGOs for future reference <br>and share them with others, facilitating <br>collaboration and support within your <br>community.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- our community ends here -->
+
+<!--our community-->
+<div class="flex justify-center items-center mt-10 py-10 bg-black">
+    <div class="relative h-96 w-96 overflow-hidden">
+      <div class="absolute inset-0 flex justify-center items-center rounded-full">
+        <!-- Rotating border -->
+        <div class="h-96 w-96 border-4 border-white rounded-full absolute animate-rgb"></div>
+      </div>
+      <!-- Content -->
+      <div class="container bg-black px-20 py-14 text-center text-white z-10">
+        <h3 class="text-3xl font-semibold">Your Community at Your Fingertips</h3>
+        <br>
+        <p>Ready to explore and support the NGOs shaping a better tomorrow in your area? Start your journey with NGO Explorer today!</p>
+      </div>
+    </div>
+  </div>
+<!-- our community ends here -->
+
+<!-- user reviews -->
+<div>
+  <h3 class = "text-center font-semibold mt-24 py-8 text-3xl">
+    What our members say
+  </h3>
+</div>
+<div class="mx-auto px-44">
+  <div class="slider">
+    <div class="slider-container">
+      <div class="slider-item">
+        <div class="review bg-gray-200 rounded-lg p-4">
+          <!-- Review content -->
+          <div class="flex gap-4">
+            <div>
+              <img src="img/pfp.png" alt="" class="rounded-full h-12 w-12">
+            </div>
+            <div>
+              <h4 class="font-bold text-lg">Ambika Sharma</h4>
+              <p>Lucknow</p>
+            </div>
+          </div>
+          <h3 class="font-semibold mt-6 ">"Innovate, Collaborate, Create"</h3>
+          <p class="mb-4">'As a passionate advocate for gender equality, Ive always struggled to find local NGOs aligned with my values. Thats until I discovered NGO Explorer!</p><br>
+          <span>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </span>
+        </div>
+      </div>
+      <!-- Additional slider items -->
+      <div class="slider-item">
+        <div class="review bg-gray-200 rounded-lg p-4">
+          <!-- Review content -->
+          <div class="flex gap-4">
+            <div>
+              <img src="img/pfpg2.png" alt="" class="rounded-full h-12 w-12">
+            </div>
+            <div>
+              <h4 class="font-bold text-lg">Srishti Rana</h4>
+              <p>Dehradun</p>
+            </div>
+          </div>
+          <h3 class="font-semibold mt-6 ">"Empowerment at Its Best"</h3>
+          <p class="mb-4">"NGO Explorer transformed my support journey. With its intuitive interface and extensive database, I easily connected with a local NGO focused on women's rights and education."</p>
+          <span>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </span>
+        </div>
+      </div>
+      <div class="slider-item">
+        <div class="review bg-gray-200 rounded-lg p-4">
+          <!-- Review content -->
+          <div class="flex gap-4">
+            <div>
+              <img src="img/pfpm1.png" alt="" class="rounded-full h-12 w-12">
+            </div>
+            <div>
+              <h4 class="font-bold text-lg">Rishav Bharadwaz</h4>
+              <p>Hyderabad</p>
+            </div>
+          </div>
+          <h3 class="font-semibold mt-6 ">"A LifeSaver"</h3>
+          <p class="mb-4">NGO Explorer has been a lifesaver for me! As a busy professional, I didnt have the time to search endlessly for NGOs supporting womens rights and education</p>
+          <span>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </span>
+        </div>
+      </div>
+      <div class="slider-item">
+        <div class="review bg-gray-200 rounded-lg p-4">
+          <!-- Review content -->
+          <div class="flex gap-4">
+            <div>
+              <img src="img/pfpg3.png" alt="" class="rounded-full h-12 w-12">
+            </div>
+            <div>
+              <h4 class="font-bold text-lg">Niranjana Vinod</h4>
+              <p>Ernakulam</p>
+            </div>
+          </div>
+          <h3 class="font-semibold mt-6 ">"Fueling Tomorrow\'s Leaders"</h3>
+          <p class="mb-4">NGO Explorers easy-to-use search function and filter options, I quickly found an organization that resonated with me.</p>
+          <span>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </span>
+        </div>
+      </div>
+      <div class="slider-item">
+        <div class="review bg-gray-200 rounded-lg p-4">
+          <!-- Review content -->
+          <div class="flex gap-4">
+            <div>
+              <img src="img/pfp.png" alt="" class="rounded-full h-12 w-12">
+            </div>
+            <div>
+              <h4 class="font-bold text-lg">Jobsy Shaji</h4>
+              <p>Kollam</p>
+            </div>
+          </div>
+          <h3 class="font-semibold mt-6 ">"Unlock Your Potential"</h3>
+          <p class="mb-4">I was able to find and connect with an NGO dedicated to womens rights and education in my area.</p>
+          <span>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </span>
+        </div>
+      </div>
+      <div class="slider-item">
+        <div class="review bg-gray-200 rounded-lg p-4">
+          <!-- Review content -->
+          <div class="flex gap-4">
+            <div>
+              <img src="img/pfpm2.png" alt="" class="rounded-full h-12 w-12">
+            </div>
+            <div>
+              <h4 class="font-bold text-lg">Kashyap Rayabagi</h4>
+              <p>Bengaluru</p>
+            </div>
+          </div>
+          <h3 class="font-semibold mt-6 ">"Transformative Learning Experience"</h3>
+          <p class="mb-4">Thanks to NGO Explorer, Ive found my perfect match and am proud to be a part of their impactful initiatives.</p>
+          <span>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <button class="prev px-5 rounded-full" onclick="changeSlide(-1)">
+        <i class="fas fa-chevron-left text-xl"></i>
+      </button>
+      <button class="next px-5 rounded-full" onclick="changeSlide(1)">
+        <i class="fas fa-chevron-right text-xl"></i>
+      </button>
+    </div>
+  </div>
+</div>
+<!-- user review ends -->
+
+<!-- FAQs -->
+<div class="mx-auto px-52">
+  <h2 class="font-bold text-3xl">Frequently Asked Questions</h2>
+  <p class="text-gray-400 mb-14">If you have anything u want to ask, reach out to us.</p>
+  <div class="accordion">
+    <div class="accordion-item border-accordion mb-4">
+      <h3 class="accordion-header cursor-pointer py-4 text-left rounded-t-lg font-semibold" data-accordion-target="#accordion-content-1">
+        Do I need to pay for anything?
+      </h3>
+      <div id="accordion-content-1" class="accordion-content hidden rounded-b-lg text-gray-700">
+        <p>Not at all! Everything is completely FREE OF COST and we will bear its cost for you.</p>
+      </div>
+    </div>
+    <div class="accordion-item border-accordion mb-4">
+      <h3 class="accordion-header cursor-pointer py-4 text-left rounded-t-lg font-semibold" data-accordion-target="#accordion-content-1">
+        How do I join community?
+      </h3>
+      <div id="accordion-content-1" class="accordion-content hidden rounded-b-lg text-gray-700">
+        <p>Start your collaborative journey of learning, practicing and sharing knowledge with our enthusiastic community!! by clicking on the "Join Us" button at Top Right corner and fill the details.</p>
+      </div>
+    </div>
+    <div class="accordion-item border-accordion mb-4">
+      <h3 class="accordion-header cursor-pointer py-4 text-left rounded-t-lg font-semibold" data-accordion-target="#accordion-content-1">
+        Is your community beginner friendly?
+      </h3>
+      <div id="accordion-content-1" class="accordion-content hidden rounded-b-lg text-gray-700">
+        <p>Yes! Everyone is welcomed.</p>
+      </div>
+    </div>
+    <div class="accordion-item border-accordion mb-4">
+      <h3 class="accordion-header cursor-pointer py-4 text-left rounded-t-lg font-semibold" data-accordion-target="#accordion-content-1">
+        How do you stay up-to-date on latest updates?
+      </h3>
+      <div id="accordion-content-1" class="accordion-content hidden rounded-b-lg text-gray-700">
+        <p>We Update our website on regular intervals.</p>
+      </div>
+    </div>
+    <div class="accordion-item border-accordion">
+      <h3 class="accordion-header cursor-pointer py-4 text-left rounded-t-lg font-semibold" data-accordion-target="#accordion-content-1">
+        Do you provide accurate data and guidance?
+      </h3>
+      <div id="accordion-content-1" class="accordion-content hidden rounded-b-lg text-gray-700">
+        <p>Yes. That is the highlight of our community.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Contact US -->
+  <div id="contactUsSection" >
+  <div class="flex gap-60 mt-16 mb-28" style="background: linear-gradient(to right, #434343 0%, black 100%);">
+    <div class = "py-10 ml-56 text-white">
+      <h3 class = "font-semibold text-2xl text-white mt-5">Contact us</h3>
+      <p class="py-6">Have questions, suggestions or just wanna say hello ? <br> Reach out to us using the information below.</p>
+      <div class = "flex gap-2">
+        <svg class = "w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 0C21.5 0 0 21.5 0 48V464c0 26.5 21.5 48 48 48h96V432c0-26.5 21.5-48 48-48s48 21.5 48 48v80h96c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H48zM64 240c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V240zm112-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V240c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V240zM80 96h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V112zM272 96h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16z"/></svg>
+        <p>VIT Bhopal <br> Bhopal,466114 -IN</p>
+      </div><br>
+      <div class = "flex gap-2">
+        <svg class = "w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+        <p>+91-8977256332</p>
+      </div><br>
+      <div class = "flex gap-2">
+        <svg class = "w-4 mb-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+        <p>rayabagikashyap@gmail.com</p>
+      </div>
+    </div>
+    <div class = "">
+      <img src="img/hero2.jpg" alt="" class="pl-52 h-full">
+    </div>
+  </div></div>
+
+<!-- footer starts here -->
+<footer>
+  <!-- <hr class="mb-5 border border-solid border-gray-200"> -->
+  <div class = "px-40 flex mt-10 mb-16">
+    <div class = "mt-6">
+      <embed src="img/Hmm.svg" type="image/svg+xml">
+    </div>
+    <div class="ml-8 mr-16 mt-6">
+      <h4 class="font-bold">Cascade</h4>
+      <p>Your Help at Your Fingertips</p>
+    </div>
+    <div class="ml-48">
+      <h4 class = "font-bold">Company</h4><br>
+      <ul>
+        <li><a href="">NGOs</a></li><br>
+        <li><a href="" id = "communityf">Community</a></li><br>
+        <li><a href="" id = "contactUsBtnf">Contact Us</a></li><br>
+      </ul>
+    </div>
+    <div class="px-20">
+      <h4 class = "font-bold">Legal</h4><br>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">Privacy</a></li><br>
+        <li><a href="#">Terms</a></li><br>
+      </ul>
+    </div>
+    <div class = "px-4">
+      <img src="img/QR.png" alt="" style="width: 175px; height: 175;">
+    </div>
+    <div class = "px-2">
+      <h3 class = "font-bold">More Info</h3>
+      <p>Scan the QR code to know more
+         about the developers</p>
+    </div>
+  </div>
+  <hr class="border border-solid border-gray-200">
+  <p class = "text-gray-500 mt-4 mb-4 ml-5 text-center">&#169 2024 Copyright Cascade. All rights reserved.</p>
+</footer>
+
+
+<!-- JavaScript to toggle accordion items -->
+<script>
+
+document.getElementById('logoutBtn').addEventListener('click', function() {
+    // Redirect the user to the login page
+    window.location.href = '/login.html'; // Change 'login.html' to your actual login page URL
+  });
+
+  
+  document.getElementById('contactUsBtn').addEventListener('click', function() {
+    document.getElementById('contactUsSection').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  document.getElementById('community').addEventListener('click', function() {
+    document.getElementById('communitySection').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  document.getElementById("communityf").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent default behavior of anchor tag
+    document.getElementById("communitySection").scrollIntoView({ behavior: "smooth" });
+  });
+
+  document.getElementById("contactUsBtnf").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent default behavior of anchor tag
+    document.getElementById("contactUsSection").scrollIntoView({ behavior: "smooth" });
+  });
+
+    const accordionItems = document.querySelectorAll('.border');
+    document.addEventListener("DOMContentLoaded", function() {
+      const accordionItems = document.querySelectorAll(".accordion-item");
+      accordionItems.forEach(item => {
+        const header = item.querySelector(".accordion-header");
+        const content = item.querySelector(".accordion-content");
+        const plusMinus = header.querySelector(".plus-minus"); // No querySelector needed here
+
+        header.addEventListener("click", () => {
+          content.classList.toggle("hidden");
+          plusMinus.textContent = content.classList.contains("hidden") ? "+" : "-";
+          content.classList.toggle('transition ease-out duration-700'); /* Added transition class */
+          plusMinus.classList.toggle('transition ease-out duration-300'); /* Added transition class */
+        });
+      });
+    });
+
+    const sliderContainer = document.querySelector('.slider-container');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+
+    let currentSlide = 0;
+    const slidesPerView = 1; // Adjust as needed to display more or fewer reviews per slide
+    const totalSlides = sliderContainer.children.length;
+
+    function changeSlide(offset) {
+      currentSlide = (currentSlide + offset + totalSlides) % totalSlides;
+      sliderContainer.style.transform = `translateX(-${currentSlide * (50 / slidesPerView)}%)`;
+    }
+
+    prevButton.addEventListener('click', () => changeSlide(-1));
+    nextButton.addEventListener('click', () => changeSlide(1));
+</script>
+</body>
+</html>

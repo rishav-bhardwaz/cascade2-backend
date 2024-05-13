@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-WKtnKypMbkz6+w1yOZ/YLG7/vQ//Kmae4/GI2k5Xa1Ul6WmN8dVpMnHElM7xI2RDlOG4TztG5jj99pOzOgQmXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <title>NGOs</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body class="bg-gradient-to-tr from-zinc-50 to-purple-50">
+  <!-- Header -->
+  <div class="pl-20 py-8 flex">
+    <div class="logo pl-32 py-8">
+      <a href="Main.html"></a>
+      <embed src="img/Hmm.svg" type="image/svg+xml" class="text-lg" id="myImage">
+    </div>
+    <div>
+      <ul class="pl-20 pr-48 py-10 flex justify-between text-gray-700 font-semibold ">
+        <button class="px-5 hover:underline"><a href="/Main.html">Home</a></button>
+        <button class="px-5 hover:underline"><a href="/NGO.html">NGO</a></button>
+        <button id="community" class="px-5 hover:underline">Community</button>
+        <button id="contactUsBtn" class="px-5 hover:underline">Contact Us</button>
+      </ul>
+    </div>
+    <div class="flex items-center">
+      <div class="pl-96 flex-1">
+        <button class="px-4 py-2 inline-block rounded-lg bg-black text-white font-bold">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDAhNkthZ-yZKNoQW8pDzrY366uahei2i_z3JpQwXYPCvNFA/viewform?usp=sf_link">Join Us</a>
+        </button>
+        <button id="logoutBtn" class="px-4 py-2 inline-block justify-between rounded-2xl border-solid border- border-black">Logout</button>
+      </div>
+    </div>
+  </div>
+  <!-- End Header -->
+
+  <!-- Main Content -->
+  <div class="px-56 mt-6 mb-4">
+    <div>
+      <h2 class="font-bold text-5xl text-center text-black">Exploring the Landscape of Philanthropy</h2><br>
+      <p class="text-center text-gray-500 font-semibold">Visualise the impact of NGOs around the globe. Track their projects, explore their reach, <br> and gain valuable insights into their work, all at your fingertips.</p>
+    </div>
+  </div>
+  <div class="px-96">
+    <div class="px-56">
+      <p class="text-center border border-solid rounded-full text-gray-500 border-gray-300 text-sm">Want to become a part? <a href="#" class="text-blue-400 text-xs">Fill the Form -></a></p>
+    </div><br><br>
+  </div>
+
+<!-- User Cards -->
+<div id="app" class="container mx-auto py-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-14">
+      <div v-for="ngo in ngos" :key="ngo._id" class="bg-white rounded-lg shadow-md flex flex-col">
+        <img class="h-24 w-24 rounded-full mx-auto -mt-8" src="img/pfpm2.png" alt="NGO Profile Picture">
+        <div class="" style="letter-spacing: 2px;">
+          <div class="font-bold text-xl text-black mb-1 text-center uppercase">{{ ngo.name }}</div>
+          <p class="text-center">"Empowering Change, Transforming Lives"</p><br>
+          <div class="bg-black rounded-lg text-white p-4 mt-4 pb-14 overflow-auto">
+            <p class="text-base"><i class="fa-solid fa-phone"></i> {{ ngo.PhoneNo }}</p><br>
+            <p class="text-base"><i class="fa-solid fa-location-dot"></i> {{ ngo.Address }}</p><br>
+            <p class="text-base"><i class="fa-solid fa-envelope"></i> {{ ngos.Email }}</p><br>
+            <p class="text-base"><i class="fa-solid fa-link"></i> {{ ngos.Website }}</p><br>
+            <div class="flex justify-center gap-5">
+              <p class="text-center text-xl"><i class="fa-brands fa-instagram"></i></p>
+              <p class="text-center text-xl"><i class="fa-brands fa-linkedin"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<div id="map" class="bg-repeat-space"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkqqbaSXmsPUYD_IhF120IsQjsAZiUJUY&callback=initMap&libraries=&v=weekly" async>
+</script>
+
+<!-- footer starts here -->
+<footer>
+  <!-- <hr class="mb-5 border border-solid border-gray-200"> -->
+  <div class = "px-40 flex mt-10 mb-16">
+    <div class = "mt-6">
+      <embed src="img/Hmm.svg" type="image/svg+xml">
+    </div>
+    <div class="ml-8 mr-16 mt-6">
+      <h4 class="font-bold">Cascade</h4>
+      <p>Your Help at Your Fingertips</p>
+    </div>
+    <div class="ml-48">
+      <h4 class = "font-bold">Company</h4><br>
+      <ul>
+        <li><a href="">NGOs</a></li><br>
+        <li><a href="" id = "communityf">Community</a></li><br>
+        <li><a href="" id = "contactUsBtnf">Contact Us</a></li><br>
+      </ul>
+    </div>
+    <div class="px-20">
+      <h4 class = "font-bold">Legal</h4><br>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">Privacy</a></li><br>
+        <li><a href="#">Terms</a></li><br>
+      </ul>
+    </div>
+    <div class = "px-4">
+      <img src="img/QR.png" alt="" style="width: 175px; height: 175;">
+    </div>
+    <div class = "px-2">
+      <h3 class = "font-bold">More Info</h3>
+      <p>Scan the QR code to know more
+         about the developers</p>
+    </div>
+  </div>
+  <hr class="border border-solid border-gray-200">
+  <p class = "text-gray-500 mt-4 mb-4 ml-5 text-center">&#169 2024 Copyright Cascade. All rights reserved.</p>
+</footer>
+
+<script>
+    new Vue({
+      el: '#app',
+      data: {
+        ngos: []
+      },
+      created() {
+        this.fetchNGOs();
+      },
+      methods: {
+        fetchNGOs() {
+            axios.get('/api/NGOs') // Correct endpoint path
+             .then(response => {
+             this.ngos = response.data;
+  })
+  .catch(error => {
+    console.error('Error fetching NGOs:', error);
+  });
+        }
+      }
+    });
+
+  function initMap() {
+    const myLatLng = { lat: 29.8543, lng: 77.8880 };
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 4,
+      center: myLatLng,
+    });
+
+    new google.maps.Marker({
+      position: myLatLng,
+      map,
+      title: "Hello World!",
+    });
+  }
+
+  const image = document.getElementById("myImage");
+  image.addEventListener("click", function() {
+    window.location.href = "Main.html";
+  });
+</script>
+</body>
+</html>
